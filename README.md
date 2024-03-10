@@ -1,3 +1,13 @@
+
+ > [Discord](https://discord.gg/sideprotocol/)
+
+ > [Testnet](https://testnet.side.one/staking/)
+
+ > [Github](https://github.com/sideprotocol/)
+
+ > [Medium](https://medium.com/@SideProtocol/from-s1-to-s5-side-protocols-path-towards-a-modular-future-e5b7ef137e1a/)
+
+
 Update packages & Install dependencies
               
      sudo apt update && sudo apt upgrade -y
