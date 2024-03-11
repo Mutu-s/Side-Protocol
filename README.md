@@ -37,10 +37,6 @@ Initialize Node
               
     sided init <NAME VALIDATOR> --chain-id=side-testnet-2 --home ~/.sided
             
-Download genesis and addrbook
-              
-    curl -Ls https://services.bccnodes.com/testnets/side/genesis.json > $HOME/.sidechain/config/genesis.json
-    curl -Ls https://services.bccnodes.com/testnets/side/addrbook.json > $HOME/.sidechain/config/addrbook.json
               
 Download Genesis File
      
