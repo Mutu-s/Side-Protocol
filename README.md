@@ -25,7 +25,7 @@ Download and build binaries
     git clone https://github.com/sideprotocol/side.git
     cd side
     git checkout v0.6.0
-    make insall
+    make install
     export GOPATH=$HOME/go
     export PATH=$PATH:$GOPATH/bin
     
