@@ -48,8 +48,8 @@ Download Genesis File
 ​
 Setup Seeds, Peers, and Gas Price
 
-    sed -i -e "s|^seeds *=.*|seeds = \"d9911bd0eef9029e8ce3263f61680ef4f71a87c4@13.230.121.124:26656,693bdfec73a81abddf6f758aa49321de48456a96@13.231.67.192:26656"\"|" $HOME/.sided/config/config.toml
-    sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"2eba9c8e6fb9d56bbdd10d007a598541c37f6493@13.212.61.41:26656"\"|" $HOME/.sided/config/config.toml
+    sed -i -e "s|^seeds *=.*|seeds = \"d9911bd0eef9029e8ce3263f61680ef4f71a87c4@13.230.121.124:26656,693bdfec73a81abddf6f758aa49321de48456a96@13.231.67.192:26656\"|" $HOME/.sided/config/config.toml
+    sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"2eba9c8e6fb9d56bbdd10d007a598541c37f6493@13.212.61.41:26656\"|" $HOME/.sided/config/config.toml
     sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.005uside\"|" $HOME/.sided/config/app.toml
             
 Create service
