@@ -44,7 +44,7 @@ Download genesis and addrbook
               
 Download Genesis File
      
-    wget https://raw.githubusercontent.com/sideprotocol/testnet/main/side-testnet-2/genesis.json 
+    wget https://raw.githubusercontent.com/sideprotocol/testnet/main/side-testnet-2/genesis.json -O $HOME/.sided/config/genesis.json
 ​
 Setup Seeds, Peers, and Gas Price
 
@@ -52,21 +52,6 @@ Setup Seeds, Peers, and Gas Price
     sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"2eba9c8e6fb9d56bbdd10d007a598541c37f6493@13.212.61.41:26656\"|" $HOME/.sided/config/config.toml
     sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.005uside\"|" $HOME/.sided/config/app.toml
             
-Create service
-              
-    sudo tee /etc/systemd/system/sided.service > /dev/null << EOF
-    [Unit]
-    Description=sided 
-    After=network-online.target
-    [Service]
-    User=$USER
-    ExecStart=$(which sided) start
-    Restart=on-failure
-    RestartSec=10
-    LimitNOFILE=10000
-    [Install]
-    WantedBy=multi-user.target
-    EOF
             
 Start service
             
